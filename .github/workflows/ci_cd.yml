@@ -12,11 +12,11 @@ jobs:
     name: test quote_disp
     runs-on: ubuntu-latest
     steps:
-      - uses: "./setup"
-      - uses: "../quote_disp/action"
+      - uses: ./.github/setup
+      - uses: ./quote_disp/action
   test_quote_gen:
     name: test quote_gen
     runs-on: ubuntu-latest
     steps:
-      - uses: "./setup"
-      - uses: "../quote_gen/action"
+      - uses: ./.github/setup
+      - uses: ./quote_gen/action

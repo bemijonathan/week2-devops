@@ -1,0 +1,10 @@
+#git ignore file for python projects
+
+# Byte-compiled / optimized / DLL files
+
+**/__pycache__/
+**/*__pycache__/
+**/venv/
+**/venv.cfg
+**/*.pytest_cache/
+.idea/

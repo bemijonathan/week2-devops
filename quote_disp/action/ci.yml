@@ -1,0 +1,7 @@
+name: "Test quote display"
+description: "This action does testing for quote display"
+runs:
+  using: "composite"
+  steps:
+    - name: "Run tests"
+      run: python -m pytest

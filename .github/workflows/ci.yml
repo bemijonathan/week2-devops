@@ -1,0 +1,16 @@
+name: backend-ci
+run-name: backend-ci
+on: [push, pull_request]
+jobs:
+  test_quote_display:
+    name: test quote_disp
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./setup.yml
+      - uses: ../quote_disp/action/ci.yml
+  test_quote_gen:
+    name: test quote_gen
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./setup.yml
+      - uses: ../quote_gen/action/ci.yml

@@ -17,3 +17,5 @@ jobs:
         with:
           project-dir: "./quote_disp"
       - uses: ./quote_disp/action
+        with:
+          project-dir: "./quote_disp"

@@ -14,6 +14,8 @@ jobs:
     steps:
       - uses: "actions/checkout@v2"
       - uses: ./.github/setup
+        with:
+          project-dir: "./quote_disp"
       - uses: ./quote_disp/action
   test_quote_gen:
     name: test quote_gen
@@ -21,4 +23,6 @@ jobs:
     steps:
       - uses: "actions/checkout@v2"
       - uses: ./.github/setup
+        with:
+          project-dir: "./quote_gen"
       - uses: ./quote_gen/action

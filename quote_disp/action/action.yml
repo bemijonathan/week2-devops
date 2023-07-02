@@ -5,3 +5,4 @@ runs:
   steps:
     - name: "Run tests"
       run: python -m pytest
+      shell: bash

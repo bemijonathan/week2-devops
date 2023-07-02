@@ -16,6 +16,7 @@ runs:
       uses: "actions/checkout@v2"
     - name: "Install dependencies"
       run: |
+        cd ${{ inputs.project-dir }}
         python -m pip install --upgrade pip
-        pip install -r  ${{ inputs.project-dir }}/requirements.txt
+        pip install -r requirements.txt
       shell: bash

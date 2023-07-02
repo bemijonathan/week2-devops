@@ -9,5 +9,5 @@ runs:
   using: "composite"
   steps:
     - name: "Run tests"
-      run: cd ${{ inputs.project-dir }} && python -m pytest
+      run: cd ${{ inputs.project-dir }} && pytest
       shell: bash

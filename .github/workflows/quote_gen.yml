@@ -1,5 +1,5 @@
-name: backend-ci
-run-name: backend-ci
+name: quote_gen-ci
+run-name: quote_gen-ci
 on:
   push:
     branches:
@@ -8,15 +8,6 @@ on:
     branches:
       - "*"
 jobs:
-  test_quote_display:
-    name: test quote_disp
-    runs-on: ubuntu-latest
-    steps:
-      - uses: "actions/checkout@v2"
-      - uses: ./.github/setup
-        with:
-          project-dir: "./quote_disp"
-      - uses: ./quote_disp/action
   test_quote_gen:
     name: test quote_gen
     runs-on: ubuntu-latest
